@@ -2,7 +2,7 @@ title = "Custom Password Detection"
 
 [[rules]]
 id = "hardcoded-password"
-description = "Detect hardcoded password assignments"
+description = "Detect hardcoded password assignments  gitleaks dir . --config .gitleaks.toml --report-format json --report-path report.json"
 regex = '''(?i)(password|passwd|pwd|admin_password)\s*[:=]\s*["']?[^"'\r\n]+["']?'''
 tags = ["password", "custom"]
 
