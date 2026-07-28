@@ -1,0 +1,19 @@
+title = "Custom Password Detection"
+
+[[rules]]
+id = "hardcoded-password"
+description = "Detect hardcoded password assignments"
+regex = '''(?i)(password|passwd|pwd|admin_password)\s*[:=]\s*["']?[^"'\r\n]+["']?'''
+tags = ["password", "custom"]
+
+[[rules]]
+id = "client-secret"
+description = "Detect client secrets"
+regex = '''(?i)(client_secret|secret_key|access_key|api_key)\s*[:=]\s*["']?[^"'\r\n]+["']?'''
+tags = ["secret"]
+
+[[rules]]
+id = "connection-string"
+description = "Detect connection strings"
+regex = '''(?i)(connection_string|jdbc_url)\s*[:=]\s*["']?[^"'\r\n]+["']?'''
+tags = ["connection"]

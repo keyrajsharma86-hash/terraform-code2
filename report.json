@@ -1,0 +1,71 @@
+[
+ {
+  "RuleID": "hardcoded-password",
+  "Description": "Detect hardcoded password assignments",
+  "StartLine": 19,
+  "EndLine": 19,
+  "StartColumn": 4,
+  "EndColumn": 45,
+  "Match": "admin_password = each.value.admin_password",
+  "Secret": "admin_password",
+  "File": "Child/Virtual_Machine/main.tf",
+  "SymlinkFile": "",
+  "Commit": "",
+  "Entropy": 3.3787835,
+  "Author": "",
+  "Email": "",
+  "Date": "",
+  "Message": "",
+  "Tags": [
+   "password",
+   "custom"
+  ],
+  "Fingerprint": "Child/Virtual_Machine/main.tf:hardcoded-password:19"
+ },
+ {
+  "RuleID": "hardcoded-password",
+  "Description": "Detect hardcoded password assignments",
+  "StartLine": 122,
+  "EndLine": 122,
+  "StartColumn": 6,
+  "EndColumn": 34,
+  "Match": "admin_password = \"342^\u0026*@123\"",
+  "Secret": "admin_password",
+  "File": "Enviroment/Dev/terraform.tfvars",
+  "SymlinkFile": "",
+  "Commit": "",
+  "Entropy": 3.3787835,
+  "Author": "",
+  "Email": "",
+  "Date": "",
+  "Message": "",
+  "Tags": [
+   "password",
+   "custom"
+  ],
+  "Fingerprint": "Enviroment/Dev/terraform.tfvars:hardcoded-password:122"
+ },
+ {
+  "RuleID": "hardcoded-password",
+  "Description": "Detect hardcoded password assignments",
+  "StartLine": 149,
+  "EndLine": 149,
+  "StartColumn": 6,
+  "EndColumn": 36,
+  "Match": "admin_password = \"Password@123\"",
+  "Secret": "admin_password",
+  "File": "Enviroment/Dev/terraform.tfvars",
+  "SymlinkFile": "",
+  "Commit": "",
+  "Entropy": 3.3787835,
+  "Author": "",
+  "Email": "",
+  "Date": "",
+  "Message": "",
+  "Tags": [
+   "password",
+   "custom"
+  ],
+  "Fingerprint": "Enviroment/Dev/terraform.tfvars:hardcoded-password:149"
+ }
+]
