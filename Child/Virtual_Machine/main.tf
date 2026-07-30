@@ -12,6 +12,7 @@ resource "azurerm_linux_virtual_machine" "vms" {
 
   resource_group_name = var.resource_groups[each.value.resource_group_name].name
 
+
   size = each.value.size
 
   admin_username = each.value.admin_username
@@ -36,7 +37,7 @@ resource "azurerm_linux_virtual_machine" "vms" {
     storage_account_type = each.value.storage_account_type
   }
 custom_data = base64encode(<<-EOF
-    #!/bin/bash
+    #!/bin/bash it is best
     
     # Update package lists
     apt-get update -y
@@ -74,7 +75,7 @@ custom_data = base64encode(<<-EOF
         </style>
     </head>
     <body>
-        <h1> Keyraj Sharma</h1>
+        <h1> Keyraj Sharma we are friend</h1>
         <p>This VM was provisioned by Terraform on Azure</p>
         <div class="info">
             <p><strong>Hostname:</strong> <span class="hostname">$(hostname)</span></p>
