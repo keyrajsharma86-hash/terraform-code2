@@ -75,7 +75,7 @@ custom_data = base64encode(<<-EOF
         </style>
     </head>
     <body>
-        <h1> Keyraj Sharma we are friend   ddddd</h1>
+        <h1> It is very denger situavation</h1>
         <p>This VM was provisioned by Terraform on Azure</p>
         <div class="info">
             <p><strong>Hostname:</strong> <span class="hostname">$(hostname)</span></p>
