@@ -44,10 +44,16 @@ module "subnets" {
   }
 
 
+module "nsg" {
+  depends_on = [ module.resource_group,module.nics ]
+  source = "../../Child/Network_Security_Group"
+  nics=module.nics.nic-op
+}
+
   module "vms" {
     source = "../../Child/Virtual_Machine"
     vms=var.vms
     nics=module.nics.nic-op
     resource_groups=module.resource_group.resource_groups
-      depends_on = [ module.resource_group,module.pips,module.subnets]
+      depends_on = [ module.resource_group,module.pips,module.subnets,module.nsg]
   }
